@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Paulo Henrique</title>
+    <style>
+        /*layout slim*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 30px;
+            background: linear-gradient(to right, #960018, #7a0014);
+            color: white;
+        }
+        
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            display: block;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        h2 {
+            color: #960018;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ffcccb;
+            font-size: 22px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #ffcccb;
+        }
+        
+        .item h3 {
+            color: #7a0014;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .item p {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill {
+            background-color: #960018;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        
+        .contact-footer {
+            background-color: #f5f5f5;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        
+        .contact-title {
+            color: #960018;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 12px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                padding: 30px 20px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <img src="Imagens/camera/fotoeu.jpg" alt="Foto de ph" class="profile-img">
+            <h1>Paulo Henrique</h1>
+            <p class="subtitle">Aspirante a Desenvolvedor Front-end</p>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <div class="content">
+            <!-- Seção Sobre Mim -->
+            <section class="section">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Sou um desenvolvedor front-end iniciante, apaixonado por tecnologia e em busca da minha primeira oportunidade no mercado de trabalho. Estou sempre disposto a aprender coisas novas e me dedicar aos projetos. Tenho grande interesse em desenvolvimento web e estou constantemente me aprimorando através de cursos e projetos pessoais.</p>
+            </section>
+
+            <!-- Seção Formação Acadêmica -->
+            <section class="section">
+                <h2>Formação Acadêmica</h2>
+                <div class="item">
+                    <h3>Sistema de informações</h3>
+                    <p><strong>Ufra</strong> | 08/2024 - 04/2025🔒</p>
+                    <p>O curso de Sistemas de Informação ensina a analisar, projetar e gerenciar fluxos de dados em uma organização, usando a tecnologia como ferramenta para resolver problemas de negócio e apoiar a tomada de decisão.(Trancado por Problemas financeiros)</p>
+                </div>
+
+                <div class="item">
+                    <h3>Sistema de informações</h3>
+                    <p><strong>Estacio Castanhal</strong> | 04/2025... </p>
+                    <p></p>
+                </div>
+                
+                <div class="item">
+                    <h3>Ensino Médio Completo</h3>
+                    <p><strong>E. E. E. M. Frei Miguel de Bulhões</strong> | 2020 - 2023</p>
+                </div>
+            </section>
+
+            <!-- Seção Experiência -->
+            <section class="section">
+                <h2>Experiência</h2>
+                <div class="item">
+                    <h3>Projeto Pessoal: Site Pessoal</h3>
+                    <p><strong>Projeto Autônomo</strong> | 2023</p>
+                    <p>Desenvolvi um site simples de receitas utilizando HTML, CSS e JavaScript. O site possui uma página inicial, página de receitas e formulário de contato. Implementei design responsivo para funcionar bem em dispositivos móveis.</p>
+                </div>
+                
+                <div class="item">
+                    <h3>Freelance: Site para Padaria</h3>
+                    <p><strong>Trabalho Autônomo</strong> | 2024</p>
+                    <p>Criei um site simples para uma padaria local, com informações sobre produtos, horário de funcionamento e localização. O projeto incluiu a criação do design e a implementação do código.</p>
+                </div>
+            </section>
+
+            <!-- Seção Habilidades -->
+            <section class="section">
+                <h2>Habilidades</h2>
+                <div class="skills">
+                    <span class="skill">HTML (Básico)</span>
+                    <span class="skill">CSS (Básico)</span>
+                    <span class="skill">C++ (Básico)</span>
+                    <span class="skill"></span>
+                    <span class="skill"></span>
+                    <span class="skill"></span>
+                    <span class="skill">Inglês Iniciante</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Rodapé de contato -->
+        <div class="contact-footer">
+            <h3 class="contact-title">Contact</h3>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>paulohenriquecarvalho26@gmail.com</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>(91) 98547-9793</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <span>linkedin.com/in/paulohenrique</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span>💻</span>
+                    <span>github.com/paulohenrique</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Paulo Henrique. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
